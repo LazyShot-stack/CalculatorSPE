@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 script {
-                     git branch: 'master', url: "${GITHUB_REPO_URL}", credentialsId: "LazyShot-stack"
+                     git branch: 'master', url: "${GITHUB_REPO_URL}", credentialsId: "GithubCred"
                 }
             }
         }
