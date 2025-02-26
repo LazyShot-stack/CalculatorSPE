@@ -56,7 +56,7 @@ pipeline {
             script {
               withEnv(["ANSIBLE_HOST_KEY_CHECKING=False"]) {   
                 ansiblePlaybook(
-                    playbook: 'deploy.yml',
+                    playbook: 'deploy.yaml',
                     inventory: 'inventory'
                 )
             }
