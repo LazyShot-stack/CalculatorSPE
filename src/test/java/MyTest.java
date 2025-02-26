@@ -1,13 +1,14 @@
 import com.dhruvik.Main;
 import org.junit.jupiter.api.*;
 
-class MyTest {
+import static org.junit.jupiter.api.Assertions.*;
+
+public class MyTest {
 
     @Test
     @DisplayName("Power function working for positive values.")
-    void testPositiveNumbers() {
-        Assertions.assertEquals(8.0, Main.pow(2, 3));
-        Assertions.assertEquals(27.0, Main.pow(3, 3));
+    public void testPositiveNumbers() {
+        assertEquals(8.0, Main.pow(2, 3));
+        assertEquals(27.0, Main.pow(3, 3));
     }
-
 }
