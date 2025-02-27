@@ -8,8 +8,8 @@ public class Main {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-      //  System.out.println("Press enter to continue ");
-       // sc.nextLine();
+       System.out.println("Press enter to continue ");
+       sc.nextLine();
         System.out.println("Enter the number to calculate: ");
         double x = sc.nextDouble();
         System.out.println("Enter the number to calculate: ");
@@ -17,3 +17,5 @@ public class Main {
         System.out.println("Answer is: " + pow(x, y));
     }
 }
+
+//ngrok http 8080
