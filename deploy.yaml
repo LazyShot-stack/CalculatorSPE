@@ -19,6 +19,9 @@
     - name: Display Docker Pull Result
       debug:
         var: docker_pull_result    
-    
+
+    - name: Stop and remove container
+      shell: docker stop calculator && docker rm calculator || true
+
     - name: Running container
       shell: docker run -it -d --name calculator dhruvikpatel48/calculator
